@@ -29,7 +29,11 @@ module.exports = getConfig({
             '</body>',
           '</html>'
         ].join(''),
-        'db.json': JSON.stringify(db, null, 2)
+        'db.json': JSON.stringify(db, null, 2),
+        'robot.txt': [
+          'User-agent: *',
+          'Allow: /'
+        ].join('\n'),
       })
    })
 
