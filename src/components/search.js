@@ -17,8 +17,8 @@ export default class Search extends React.Component {
   render () {
     return (
       <form className='Search' onSubmit={this.onSubmit.bind(this)}>
-        <label htmlFor='search'>Buscar:</label>
-        <input ref='search' type='text' name='search'/>
+        <label htmlFor='search'>Buscar por provincia:</label>
+        <input ref='search' type='text' name='search' />
         <input type='submit' value='Buscar'/>
       </form>
     )

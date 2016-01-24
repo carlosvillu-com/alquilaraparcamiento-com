@@ -35,7 +35,7 @@ export default class Detail extends React.Component {
         {
           !this.state.provincies[provincie]
             ? <h4 className='Detail-waiting'>Esperando ...</h4>
-            : <Property {...this.state.provincies[provincie][id]} id={id}/>
+            : <Property {...this.state.provincies[provincie][id]} id={parseInt(id, 10)}/>
         }
       </section>
     )
