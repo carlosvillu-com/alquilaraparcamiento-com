@@ -17,7 +17,7 @@ export default class Layout extends React.Component {
       <div className='App'>
         <header className='Layout-header'>
           <h1 className='Layout-title'>
-            <Link className='Layout-logo' to='/'>Mega Alquiler</Link>
+            <Link className='Layout-logo' to='/'>Alquilar Aparcamiento</Link>
           </h1>
         </header>
         <section className='Layout-body'>
