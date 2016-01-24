@@ -29,6 +29,7 @@ module.exports = function () {
         var provincie = PROVINCIES[_.random(0, PROVINCIES.length - 1)]
         propertiesByProvincie[provincie] = propertiesByProvincie[provincie] || []
         propertiesByProvincie[provincie].push({
+          provincie: provincie,
           street: data[2] + ' ' + data[1],
           features: _.range( 1, _.random(1, FEATURES.length ) ).map( function () { return FEATURES[_.random(1, FEATURES.length - 1 )] } ),
           price: _.random(60000, 300000)

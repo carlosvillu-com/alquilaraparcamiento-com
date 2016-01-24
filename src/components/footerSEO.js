@@ -28,7 +28,7 @@ export default class FooterSEO extends React.Component {
       <div className='FooterSEO'>
         {
           Object.keys(this.state.provincies).map((provincie, index) => (
-            <Link key={index} className='FooterSEO-search' to='list' query={{term: provincie}}>
+            <Link key={index} className='FooterSEO-search' to='/list' query={{term: provincie}}>
               <p className='FooterSEO-query'>
                 Pisos en <small className='FooterSEO-term'>{provincie.toUpperCase()}</small>
               </p>

@@ -37,7 +37,7 @@ export default class List extends React.Component {
           {
             !this.state.provincies[term]
               ? <h4 className='List-waiting'>Buscando por <small className='List-term'>{term}</small></h4>
-              : this.state.provincies[term].map((property, index) => <Property key={index} {...property} />)
+              : this.state.provincies[term].map((property, index) => <Property key={index} {...property} id={index}/>)
           }
         </section>
       </div>
