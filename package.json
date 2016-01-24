@@ -8,7 +8,7 @@
     "start": "hjs-dev-server",
     "build": "webpack",
     "lint": "standard ./src/**/*.js",
-    "deploy": "npm run lint && npm version minor && npm run build && surge -p public -d alquilaraparcamiento.com"
+    "deploy": "npm run lint && git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags && npm run build && surge -p public -d alquilaraparcamiento.com"
   },
   "keywords": [],
   "author": "",

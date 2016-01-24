@@ -21,7 +21,9 @@ const Property = (props, state) => (
 Property.propTypes = {
   features: React.PropTypes.array,
   street: React.PropTypes.string,
-  price: React.PropTypes.number
+  price: React.PropTypes.number,
+  provincie: React.PropTypes.string,
+  id: React.PropTypes.number
 }
 
 export default Property

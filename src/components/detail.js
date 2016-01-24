@@ -3,6 +3,13 @@ import React from 'react'
 import Property from './property'
 
 export default class Detail extends React.Component {
+
+  static get propTypes () {
+    return {
+      params: React.PropTypes.object
+    }
+  }
+
   constructor (props, ctxt) {
     super(props, ctxt)
     this.state = {provincies: {}}
@@ -20,7 +27,7 @@ export default class Detail extends React.Component {
 
   render () {
     const {provincie, id} = this.props.params
-    return(
+    return (
       <section>
         <header>
           <h1>Detalle de piso</h1>
