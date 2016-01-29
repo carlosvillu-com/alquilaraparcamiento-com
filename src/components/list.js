@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 
 import Property from './property'
 
@@ -16,13 +17,12 @@ export default class List extends React.Component {
   }
 
   componentDidMount () {
-    window.fetch('/db.json')
-          .then(resp => resp.json())
-          .then(db => {
-            this.setState({
-              provincies: db
-            })
-          })
+    axios.get('/db.json')
+      .then(db => {
+        this.setState({
+          provincies: db.data
+        })
+      })
   }
 
   render () {

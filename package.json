@@ -28,6 +28,7 @@
     "underscore.string": "^3.2.3"
   },
   "dependencies": {
+    "axios": "^0.9.1",
     "history": "^1.17.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router'
+import axios from 'axios'
 
 export default class FooterSEO extends React.Component {
 
@@ -14,13 +15,12 @@ export default class FooterSEO extends React.Component {
   }
 
   componentDidMount () {
-    window.fetch('/db.json')
-          .then(resp => resp.json())
-          .then(db => {
-            this.setState({
-              provincies: db
-            })
-          })
+    axios.get('/db.json')
+      .then(db => {
+        this.setState({
+          provincies: db.data
+        })
+      })
   }
 
   render () {
