@@ -9,7 +9,7 @@ module.exports = getConfig({
   html: function (data, cb) {
     generateDB().then(function (db) {
       cb(null, {
-        '200.html': '2ZmUY0kI3RSMXkfABJn-v5OT9LSwdOMfCJH3t5vulNI.GrWssu3akJPP5uqeWcU06q7_pEPlFMf2ISR3EWVGOAc', // data.defaultTemplate(),
+        '200.html': data.defaultTemplate(),
         'index.html': [
           '<html>',
             '<head>',
